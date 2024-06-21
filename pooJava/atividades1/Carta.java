@@ -1,4 +1,4 @@
-package pooJava;
+package pooJava.atividades1;
 
 public class Carta {
 

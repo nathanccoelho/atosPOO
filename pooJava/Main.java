@@ -1,6 +1,8 @@
 package pooJava;
 
 
+import pooJava.atividades1.Contatos;
+
 public class Main {
     public static void main (String[] args){
 

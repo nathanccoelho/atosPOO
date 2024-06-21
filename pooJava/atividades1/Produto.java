@@ -1,4 +1,4 @@
-package pooJava;
+package pooJava.atividades1;
 
 public class Produto {
 
@@ -7,10 +7,12 @@ public class Produto {
     private int quantidadeEmEstoque;
 
 
-    public void toStringContatos(){
-        System.out.println("Nome: "+getNome());
-        System.out.println("Telefone: "+getTelefone());
-        System.out.println("Email: "+ getEmail());
+    public void removeProduto(){
+
+    }
+
+    public void addProduto(){
+
     }
 
 

@@ -1,7 +1,4 @@
-package pooJava;
-
-import java.time.LocalDate;
-import java.util.Arrays;
+package pooJava.atividades1;
 
 public class Contatos {
 
@@ -9,14 +6,13 @@ public class Contatos {
     private String telefone;
     private String email;
 
-
-    public void removeProduto(){
-
+    public void toStringContatos(){
+        System.out.println("Nome: "+getNome());
+        System.out.println("Telefone: "+getTelefone());
+        System.out.println("Email: "+ getEmail());
     }
 
-    public void addProduto(){
 
-    }
 
 
 

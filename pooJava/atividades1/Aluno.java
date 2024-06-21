@@ -1,4 +1,4 @@
-package pooJava;
+package pooJava.atividades1;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
