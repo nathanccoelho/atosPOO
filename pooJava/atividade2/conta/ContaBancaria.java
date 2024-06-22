@@ -1,4 +1,4 @@
-package pooJava.atividade2;
+package pooJava.atividade2.conta;
 
 public class ContaBancaria {
 
