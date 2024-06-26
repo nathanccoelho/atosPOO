@@ -6,6 +6,7 @@ public abstract class Veiculo{
     private String modelo;
     private String marca;
 
+    // Aqui só um método para printar as informações.
     public void toDescricao(){
         System.out.println("Placa: " + this.getPlaca());
         System.out.println("Marca: " + this.getMarca());
