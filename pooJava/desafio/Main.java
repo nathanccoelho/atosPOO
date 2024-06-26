@@ -1,4 +1,4 @@
-package pooJava;
+package pooJava.desafio;
 
 import pooJava.desafio.estacionamento.Estacionamento;
 import pooJava.desafio.veiculo.Carro;
