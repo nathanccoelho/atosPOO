@@ -1,4 +1,4 @@
-package pooJava.atividades1;
+package pooJava.atividade1;
 
 public class Produto {
 
