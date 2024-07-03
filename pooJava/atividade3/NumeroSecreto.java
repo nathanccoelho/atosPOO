@@ -14,21 +14,38 @@ public class NumeroSecreto {
         System.setOut(new PrintStream(System.out, true, StandardCharsets.UTF_8));
 
         Scanner scan = new Scanner(System.in);
-        int tentativa = 2;
         int numeroSecreto = numberRandom();
+        int tentativasMaximas = 3;
+        int tentativa;
 
+        while (true) {
+            tentativa = tentativasMaximas;
 
+            for (int i = 0; i < tentativasMaximas; i++) {
+                System.out.println("Para encontrar o número secreto, digite um número: ");
+                int numero = scan.nextInt();
 
-        for(int i = 0; i <3; i++) {
-            System.out.println("Para encontrar o número secreto, digite um número: ");
-            int numero = scan.nextInt();
+                if (numero == numeroSecreto) {
+                    System.out.println("Parabéns! Você acertou o número secreto.");
+                    System.out.println("Número secreto: " + numeroSecreto);
 
-            if (numero == numeroSecreto) {
-                System.out.println("Parabéns! Você acertou o número secreto.");
-                System.exit(0);
+                } else {
+                    tentativa--;
+                    System.out.println("Que pena você errou :(... tente novamente. \nTentativas restantes: " + tentativa);
+                }
+
+                System.out.println("---------------------------------");
+            }
+
+            System.out.println("O número secreto era: " + numeroSecreto + "\nDeseja reiniciar? S/N");
+            scan.nextLine();
+            String continuar = scan.nextLine();
+
+            if (continuar.equalsIgnoreCase("n") || continuar.equalsIgnoreCase("nao")) {
+                System.out.println("Obrigado pelo jogo! Até a próxima.");
+                break;
             } else {
-                System.out.println("Que pena você errou :(... tente novamente. \nTentativas restantes: "+tentativa);
-                tentativa --;
+                numeroSecreto = numberRandom();
             }
         }
 
