@@ -14,6 +14,7 @@ public abstract class ContaBancaria {
     // Descricao para as classes filhas;
     public abstract void descricao();
 
+    // Retorna o extrato, ainda gostaria de retornar as últimas transações.
     public void extrato(){
         System.out.println("Extrato: \nTitular: " + getTitular() + "\nSaldo: " + getSaldo());
     }

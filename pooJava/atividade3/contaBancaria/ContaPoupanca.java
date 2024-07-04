@@ -4,12 +4,13 @@ public class ContaPoupanca extends ContaBancaria{
 
     private double investimentos;
 
+    // Retorna o extrato, ainda gostaria de retornar as últimas transações.
     public void extrato() {
         super.extrato();
         System.out.println("Investimentos especial: "+getInvestimentos());
     }
 
-
+    // Função pra adicionar com o saldo bancário o investimento.
     public boolean gerarInvestimentos(double valor) {
         if (valor <= 0 ) {
             System.out.println("O valor do investimento deve ser positivo.");
@@ -30,6 +31,7 @@ public class ContaPoupanca extends ContaBancaria{
         return true;
     }
 
+    // Função pra retirar o investimento ja com o juros aplicado.
     public boolean retirarInvestimento(double valor){
         if (valor <= 0 ) {
             System.out.println("O valor do investimento deve ser positivo.");
@@ -48,6 +50,7 @@ public class ContaPoupanca extends ContaBancaria{
 
     }
 
+    // Só retorna as informações.
     @Override
     public void descricao() {
         System.out.println("Nome titular: "+getTitular()+"\nCPF titular: "+getCpf()+"\nAgência: "+getAgencia()+"\nConta: "+getNumeroConta()
